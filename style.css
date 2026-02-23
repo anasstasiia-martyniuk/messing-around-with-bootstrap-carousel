@@ -1,0 +1,31 @@
+.container-cube {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1400px;
+    perspective-origin: top right;
+}
+
+.cube {
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+}
+
+.back {
+    transform: translateX(8px) translateZ(-198px) scaleX(-1);
+}
+
+.right {
+    transform: rotateY(-90deg) translateY(3px) translateZ(200px) scaleX(-1);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateX(5px) translateZ(210px) scaleX(-1);
+}
+
+.table{
+    transform: translateZ(-120px) translateX(-10px) translateY(220px);
+}
